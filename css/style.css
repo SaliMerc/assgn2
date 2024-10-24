@@ -129,7 +129,8 @@ background-color: #53423a;}
       .hero h1 {
         font-size: 54px; } }
   .hero p {
-    color: rgba(255, 255, 255, 0.5);
+    color: #faece2;
+    font-size: 1.2em;
     margin-botom: 30px; }
   .hero .hero-img-wrap {
     position: relative; }
@@ -168,6 +169,20 @@ background-color: #53423a;}
       @media (min-width: 1200px) {
         .hero .hero-img-wrap:after {
           top: -40px; } }
+#hero-image{
+  animation: float 2s ease-in-out infinite;
+}
+@keyframes float {
+  0%{
+    transform: translateY(0);
+  }
+   50%{
+    transform: translateY(-20px);
+  }
+   100%{
+    transform: translateY(0);
+  }
+}
 
 .btn {
   font-weight: 600;
@@ -402,7 +417,9 @@ background-color: #53423a;}
       position: absolute;
       left: 0;
       top: 8px; }
-
+/*#para-list li{*/
+/*  list-style-type: none;*/
+/*}*/
 .popular-product {
   padding: 0 0 7rem 0; }
   .popular-product .product-item-sm h3 {
